@@ -10,7 +10,7 @@ const menuItems = [
     price: 150,
     veg: true,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=300&fit=crop'
+    image: 'https://www.cadburydessertscorner.com/hubfs/dc-website-2022/articles/soft-gulab-jamun-recipe-for-raksha-bandhan-from-dough-to-syrup-all-you-need-to-know/soft-gulab-jamun-recipe-for-raksha-bandhan-from-dough-to-syrup-all-you-need-to-know.webp'
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const menuItems = [
     price: 140,
     veg: true,
     popular: false,
-    image: 'https://images.unsplash.com/photo-1612874742237-6526221fcf4f?w=400&h=300&fit=crop'
+    image: 'https://easysavorymeals.com/wp-content/uploads/2025/09/homemade-Rasgulla-Recipe-500x375.jpg'
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const menuItems = [
     price: 180,
     veg: true,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab54a81?w=400&h=300&fit=crop'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQ--TjuSFK3fcJa9BHlkIWM_lHQrJOAygEQ&s'
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const menuItems = [
     price: 200,
     veg: false,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1631040822154-e629aaaf9f0d?w=400&h=300&fit=crop'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbO7m-8pG--K66vvohcfC9SgC3fw0YZjQ4GLta4bjpx0tOXhNM2n-qC1RpVHXx_T7szoyub4rK_85myYpqp3qgg4DuRzmu1adQYVP_Q&s=10'
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const menuItems = [
     price: 160,
     veg: true,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1609501676725-7186f017a4b8?w=400&h=300&fit=crop'
+    image: 'https://www.bigbasket.com/media/uploads/recipe/w-l/1030_1.jpg'
   },
   {
     id: 8,
@@ -82,7 +82,7 @@ const menuItems = [
     price: 140,
     veg: false,
     popular: false,
-    image: 'https://images.unsplash.com/photo-1603505439956-2a3fc3a51b89?w=400&h=300&fit=crop'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS9rWDT2_s7PbP_27kHXaR03BynImovd009g&s'
   },
   {
     id: 9,
@@ -102,7 +102,7 @@ const menuItems = [
     price: 180,
     veg: true,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1599043513145-7b8bea6b5e3f?w=400&h=300&fit=crop'
+    image: 'https://www.zaiqathespicestore.com/cdn/shop/products/paneertikka-shutter.png?v=1674062011'
   },
 
   // Snacks
@@ -124,7 +124,7 @@ const menuItems = [
     price: 80,
     veg: true,
     popular: false,
-    image: 'https://images.unsplash.com/photo-1585618863215-ba2657e5e0f7?w=400&h=300&fit=crop'
+    image: 'https://vegbuffet.com/wp-content/uploads/2023/06/onion-fritters-pakoda.jpg'
   },
   {
     id: 13,
@@ -144,7 +144,7 @@ const menuItems = [
     price: 90,
     veg: true,
     popular: true,
-    image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd64b11?w=400&h=300&fit=crop'
+    image: 'https://www.sushijunction.com/cdn/shop/products/MisoMenuImages_2.jpg?v=1651490801'
   },
 
   // Combos

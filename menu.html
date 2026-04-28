@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Sweet Kitchen | Sweets, Meals & Snacks</title>
+  <meta name="description" content="Browse Sweet Kitchen's complete menu of fresh sweets, meals, snacks, and combos. Order directly on WhatsApp with 10-15% savings.">
+  <meta name="keywords" content="Sweet Kitchen menu, sweets Chhatrapati Sambhaji Nagar, meals delivery, food ordering">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Menu - Sweet Kitchen">
+  <meta property="og:description" content="Browse fresh sweets, meals, and snacks. Order on WhatsApp now!">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">🍬 Sweet Kitchen</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="menu.html" style="color: var(--primary-saffron); font-weight: 700;">Menu</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button onclick="openCart()" style="position: relative; background: none; border: none; font-size: 1.3rem; cursor: pointer;">
+            🛒
+            <span id="cart-count" style="position: absolute; top: -8px; right: -8px; background-color: var(--primary-saffron); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;"></span>
+          </button>
+        </li>
+      </ul>
+      <button class="mobile-menu-toggle">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Browse Our Menu</h1>
+      <p>Handpicked fresh sweets, meals, and snacks made daily</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container" style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">
+    <!-- Category Tabs -->
+    <div id="category-tabs" class="category-tabs"></div>
+
+    <!-- Search & Filters -->
+    <div class="filter-bar">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search menu items..."
+        style="flex: 1; min-width: 200px;"
+      >
+      <select id="veg-filter" class="filter-dropdown">
+        <option value="">All Items</option>
+        <option value="veg">🥬 Vegetarian</option>
+        <option value="nonveg">🍗 Non-Vegetarian</option>
+      </select>
+      <select id="sort-filter" class="filter-dropdown">
+        <option value="">Sort By</option>
+        <option value="popular">Most Popular</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+      </select>
+    </div>
+
+    <!-- Menu Items Grid -->
+    <div id="menu-items" class="grid grid-3"></div>
+  </div>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <button class="cart-close" onclick="closeCart()">✕</button>
+    <h2 style="font-size: 1.3rem; margin-bottom: 1.5rem;">Your Cart</h2>
+
+    <div id="cart-items" style="flex: 1; overflow-y: auto;">
+      <!-- Items populated by JS -->
+    </div>
+
+    <div id="cart-empty" style="text-align: center; padding: 2rem;">
+      <p style="color: #999;">Your cart is empty</p>
+      <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Add items to get started</p>
+    </div>
+
+    <div id="cart-checkout" style="display: none;" class="cart-summary">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total">₹0</span>
+      </div>
+      <button onclick="checkoutWhatsApp()" class="btn-primary" style="width: 100%; margin-bottom: 0.5rem;">
+        Order on WhatsApp
+      </button>
+      <button onclick="clearCart()" style="width: 100%; padding: 10px; border: 1px solid var(--border-gray); background: white; border-radius: 8px; cursor: pointer; color: #666; font-weight: 500; transition: all 0.3s ease;">
+        Clear Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Sweet Kitchen</h3>
+          <p>Fresh sweets, meals, and snacks delivered fast</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+919405769103">☎ +91 9405769103</a></li>
+            <li><a href="https://wa.me/919405769103" target="_blank">💬 WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://instagram.com" target="_blank">📸</a>
+            <a href="https://facebook.com" target="_blank">👍</a>
+            <a href="https://wa.me/919405769103" target="_blank">💬</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sweet Kitchen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Order on WhatsApp">💬</a>
+
+  <!-- Scripts -->
+  <script src="js/menu-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

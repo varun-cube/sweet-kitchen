@@ -20,6 +20,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -27,29 +30,33 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <a href="/" class="logo">🍬 Sweet Kitchen</a>
+      <a href="./index.html" class="logo"><i class="fas fa-cake-candles"></i> Sweet Kitchen</a>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="menu.html" style="color: var(--primary-saffron); font-weight: 700;">Menu</a></li>
         <li><a href="offers.html">Offers</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li>
-          <button onclick="openCart()" style="position: relative; background: none; border: none; font-size: 1.3rem; cursor: pointer;">
-            🛒
-            <span id="cart-count" style="position: absolute; top: -8px; right: -8px; background-color: var(--primary-saffron); color: white; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700;"></span>
-          </button>
-        </li>
       </ul>
       <button class="mobile-menu-toggle">☰</button>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Browse Our Menu</h1>
-      <p>Handpicked fresh sweets, meals, and snacks made daily</p>
+  <!-- Hero - Professional Menu Page -->
+  <section class="hero-pro-page">
+    <div class="hero-pro-page-content">
+      <div class="hero-pro-label">
+        <i class="fas fa-book-open"></i> COMPLETE MENU
+      </div>
+      <h1 class="hero-pro-page-title">
+        Explore Our
+        <span class="hero-pro-gradient">Culinary</span>
+        Collection
+      </h1>
+      <p class="hero-pro-page-subtitle">
+        Handcrafted dishes made fresh daily with premium ingredients.
+        <strong>Search, filter & order directly on WhatsApp to save 10-15%</strong>
+      </p>
     </div>
   </section>
 
@@ -123,7 +130,7 @@
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="offers.html">Offers</a></li>
             <li><a href="about.html">About</a></li>
@@ -141,9 +148,9 @@
         <div class="footer-col">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="https://instagram.com" target="_blank">📸</a>
-            <a href="https://facebook.com" target="_blank">👍</a>
-            <a href="https://wa.me/919405769103" target="_blank">💬</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919405769103" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -155,7 +162,10 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Order on WhatsApp">💬</a>
+  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Chat with Sweet Kitchen on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
 
   <!-- Scripts -->
   <script src="js/menu-data.js"></script>

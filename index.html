@@ -26,6 +26,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 
@@ -54,27 +57,96 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <a href="/" class="logo">🍬 Sweet Kitchen</a>
+      <a href="./index.html" class="logo"><i class="fas fa-cake-candles"></i> Sweet Kitchen</a>
       <ul class="nav-links">
+        <li><a href="./index.html" style="color: var(--primary-saffron); font-weight: 700;">Home</a></li>
         <li><a href="#popular">Popular Items</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="offers.html">Offers</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="#" class="btn-primary btn-sm">Order Now</a></li>
+        <li><a href="menu.html" class="btn-primary btn-sm">Order Now</a></li>
       </ul>
       <button class="mobile-menu-toggle">☰</button>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Fresh Sweets & Meals Delivered Fast</h1>
-      <p>Chhatrapati Sambhaji Nagar's favorite cloud kitchen serving authentic Indian sweets, meals, and snacks</p>
-      <div class="hero-buttons">
-        <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-secondary">Order on WhatsApp</a>
-        <a href="menu.html" class="btn-outline">View Full Menu</a>
+  <!-- Hero Section - Professional Food Kitchen -->
+  <section class="hero-professional">
+    <div class="hero-pro-left">
+      <div class="hero-pro-content">
+        <div class="hero-pro-label">
+          <i class="fas fa-fire"></i> ARTISANAL KITCHEN
+        </div>
+
+        <h1 class="hero-pro-title">
+          Premium
+          <span class="hero-pro-gradient">Indian Sweets</span>
+          & Meals
+        </h1>
+
+        <p class="hero-pro-description">
+          Handcrafted with authentic recipes. Made fresh daily in our FSSAI-certified kitchen.
+          Experience the taste of tradition with modern convenience.
+        </p>
+
+        <div class="hero-pro-features">
+          <div class="feature-item">
+            <span class="feature-icon"><i class="fas fa-leaf"></i></span>
+            <span class="feature-text">100% Fresh Daily</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon"><i class="fas fa-award"></i></span>
+            <span class="feature-text">FSSAI Certified</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon"><i class="fas fa-bolt"></i></span>
+            <span class="feature-text">45-60 Min Delivery</span>
+          </div>
+        </div>
+
+        <div class="hero-pro-cta">
+          <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="cta-primary">
+            <i class="fab fa-whatsapp"></i>
+            <span>Order on WhatsApp</span>
+          </a>
+          <a href="menu.html" class="cta-secondary">
+            <i class="fas fa-book-open"></i>
+            <span>View Menu</span>
+          </a>
+        </div>
+
+        <div class="hero-pro-divider"></div>
+
+        <div class="hero-pro-savings">
+          <div class="savings-badge">
+            <i class="fas fa-piggy-bank"></i>
+            <div>
+              <strong>Save 10-15%</strong>
+              <p>Order directly & skip platform fees</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-pro-right">
+      <div class="food-showcase">
+        <div class="showcase-card showcase-sweets">
+          <img src="https://thehazelnutfactory.com/cdn/shop/files/HONEYDRYFRUITLADDOO16_940x.png?v=1689229850" alt="Premium Sweets">
+          <div class="showcase-label">
+            <i class="fas fa-utensils"></i> Artisanal Sweets
+          </div>
+        </div>
+        <div class="showcase-card showcase-meals">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Gourmet Meals">
+          <div class="showcase-label">
+            <i class="fas fa-spoon"></i> Gourmet Meals
+          </div>
+        </div>
+        <div class="showcase-accent">
+          <span class="accent-text">Made with <strong>❤️ Love</strong></span>
+        </div>
       </div>
     </div>
   </section>
@@ -100,7 +172,7 @@
   <!-- Popular Items -->
   <section class="section" id="popular">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">⭐ Most Popular Items</h2>
+      <h2 style="text-align: center; margin-bottom: 3rem;"><i class="fas fa-star" style="color: #FFB800; margin-right: 0.5rem;"></i>Most Popular Items</h2>
       <div class="grid grid-3" id="popular-items">
         <!-- Dynamically populated -->
       </div>
@@ -116,17 +188,17 @@
       <h2 style="text-align: center; margin-bottom: 3rem;">Why Choose Sweet Kitchen?</h2>
       <div class="grid grid-3" style="max-width: 900px; margin: 0 auto;">
         <div class="card" style="text-align: center; border: none; box-shadow: none; background: transparent;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🌾</div>
+          <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-saffron);"><i class="fas fa-leaf"></i></div>
           <h3>100% Fresh Daily</h3>
           <p>Made fresh every morning with premium ingredients</p>
         </div>
         <div class="card" style="text-align: center; border: none; box-shadow: none; background: transparent;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+          <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-saffron);"><i class="fas fa-bolt"></i></div>
           <h3>Quick Delivery</h3>
           <p>Delivered hot & fresh within 45-60 minutes</p>
         </div>
         <div class="card" style="text-align: center; border: none; box-shadow: none; background: transparent;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
+          <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-saffron);"><i class="fas fa-shield"></i></div>
           <h3>Hygienic Kitchen</h3>
           <p>FSSAI certified cloud kitchen with strict hygiene standards</p>
         </div>
@@ -137,7 +209,7 @@
   <!-- Today's Specials -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">🎁 Today's Specials</h2>
+      <h2 style="text-align: center; margin-bottom: 3rem;"><i class="fas fa-gift" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Today's Specials</h2>
       <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
         <div class="card">
           <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=300&fit=crop" alt="Sweet Combo" class="card-img">
@@ -175,7 +247,7 @@
   <!-- Delivery Areas -->
   <section class="section" style="background-color: #f5f5f5;">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 2rem;">📍 Delivery Areas in Chhatrapati Sambhaji Nagar</h2>
+      <h2 style="text-align: center; margin-bottom: 2rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Delivery Areas in Chhatrapati Sambhaji Nagar</h2>
       <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 1000px; margin: 0 auto;">
         <span class="badge" style="background-color: #E8F5E9; color: #2E7D32; padding: 10px 16px; border-radius: 20px; font-size: 0.95rem;">Hitech City</span>
         <span class="badge" style="background-color: #E8F5E9; color: #2E7D32; padding: 10px 16px; border-radius: 20px; font-size: 0.95rem;">Gachibowli</span>
@@ -191,43 +263,95 @@
   </section>
 
   <!-- Testimonials -->
-  <section class="section">
+  <section class="section" style="background: linear-gradient(135deg, #f8f4f0 0%, #fff9f5 100%);">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">💬 Customer Love</h2>
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
-        <div class="card">
-          <div class="card-content">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="card-description">"Best gulab jamun in Chhatrapati Sambhaji Nagar! Soft, fresh, and just the right amount of sweetness. Ordered 3 times already!"</p>
-            <strong style="color: #FF6B35;">Anjali M.</strong>
-            <p style="color: #999; font-size: 0.9rem;">Hitech City</p>
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <div style="display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <i class="fas fa-heart" style="color: var(--primary-saffron); font-size: 1.5rem;"></i>
+          <span style="font-weight: 700; letter-spacing: 1px; color: var(--primary-saffron); text-transform: uppercase; font-size: 0.9rem;">LOVED BY CUSTOMERS</span>
+        </div>
+        <h2 style="color: var(--dark-text); font-size: 2.5rem; font-weight: 800;">Customer Love</h2>
+        <p style="color: #666; margin-top: 0.75rem; font-size: 1rem;">Join thousands of happy customers enjoying fresh, authentic food</p>
+      </div>
+
+      <div class="grid grid-4" style="max-width: 1400px; margin: 0 auto; gap: 1.5rem;">
+        <!-- Testimonial 1 -->
+        <div style="background: white; border-radius: 14px; padding: 1.75rem; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); position: relative;">
+          <div style="position: absolute; top: 1.5rem; left: 1.5rem; width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; opacity: 0.15;"><i class="fas fa-quote-left"></i></div>
+
+          <div style="display: flex; gap: 0.25rem; margin-bottom: 1.25rem; font-size: 1.1rem;">
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+          </div>
+
+          <p style="color: #555; font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; color: #666;">"Best gulab jamun in Chhatrapati Sambhaji Nagar! Soft, fresh, and just the right amount of sweetness. Ordered 3 times already!"</p>
+
+          <div>
+            <p style="font-weight: 700; color: var(--primary-saffron); margin-bottom: 0.25rem;">Anjali M.</p>
+            <p style="color: #999; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fas fa-map-marker-alt" style="font-size: 0.75rem;"></i> Hitech City</p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-content">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="card-description">"Their biryani is amazing! Cooked to perfection with the right spices. Delivery was super quick too."</p>
-            <strong style="color: #FF6B35;">Rajesh K.</strong>
-            <p style="color: #999; font-size: 0.9rem;">Gachibowli</p>
+        <!-- Testimonial 2 -->
+        <div style="background: white; border-radius: 14px; padding: 1.75rem; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); position: relative;">
+          <div style="position: absolute; top: 1.5rem; left: 1.5rem; width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; opacity: 0.15;"><i class="fas fa-quote-left"></i></div>
+
+          <div style="display: flex; gap: 0.25rem; margin-bottom: 1.25rem; font-size: 1.1rem;">
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+          </div>
+
+          <p style="color: #555; font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; color: #666;">"Their biryani is amazing! Cooked to perfection with the right spices. Delivery was super quick too."</p>
+
+          <div>
+            <p style="font-weight: 700; color: var(--primary-saffron); margin-bottom: 0.25rem;">Rajesh K.</p>
+            <p style="color: #999; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fas fa-map-marker-alt" style="font-size: 0.75rem;"></i> Gachibowli</p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-content">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="card-description">"Love the packaging! Everything arrives fresh and hot. Direct WhatsApp ordering is so convenient!"</p>
-            <strong style="color: #FF6B35;">Priya S.</strong>
-            <p style="color: #999; font-size: 0.9rem;">Madhapur</p>
+        <!-- Testimonial 3 -->
+        <div style="background: white; border-radius: 14px; padding: 1.75rem; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); position: relative;">
+          <div style="position: absolute; top: 1.5rem; left: 1.5rem; width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; opacity: 0.15;"><i class="fas fa-quote-left"></i></div>
+
+          <div style="display: flex; gap: 0.25rem; margin-bottom: 1.25rem; font-size: 1.1rem;">
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+          </div>
+
+          <p style="color: #555; font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; color: #666;">"Love the packaging! Everything arrives fresh and hot. Direct WhatsApp ordering is so convenient!"</p>
+
+          <div>
+            <p style="font-weight: 700; color: var(--primary-saffron); margin-bottom: 0.25rem;">Priya S.</p>
+            <p style="color: #999; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fas fa-map-marker-alt" style="font-size: 0.75rem;"></i> Madhapur</p>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-content">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="card-description">"Family feast combo is perfect for Sunday dinner. Everything was delicious and hot when delivered!"</p>
-            <strong style="color: #FF6B35;">Mehta Family</strong>
-            <p style="color: #999; font-size: 0.9rem;">Jubilee Hills</p>
+        <!-- Testimonial 4 -->
+        <div style="background: white; border-radius: 14px; padding: 1.75rem; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); position: relative;">
+          <div style="position: absolute; top: 1.5rem; left: 1.5rem; width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; opacity: 0.15;"><i class="fas fa-quote-left"></i></div>
+
+          <div style="display: flex; gap: 0.25rem; margin-bottom: 1.25rem; font-size: 1.1rem;">
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+            <i class="fas fa-star" style="color: #FFB800;"></i>
+          </div>
+
+          <p style="color: #555; font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; font-style: italic; color: #666;">"Family feast combo is perfect for Sunday dinner. Everything was delicious and hot when delivered!"</p>
+
+          <div>
+            <p style="font-weight: 700; color: var(--primary-saffron); margin-bottom: 0.25rem;">Mehta Family</p>
+            <p style="color: #999; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fas fa-map-marker-alt" style="font-size: 0.75rem;"></i> Jubilee Hills</p>
           </div>
         </div>
       </div>
@@ -237,9 +361,11 @@
   <!-- Save with Direct Orders -->
   <section class="section" style="background: linear-gradient(135deg, #FF6B35 0%, #FF4B91 100%); color: white;">
     <div class="container" style="text-align: center;">
-      <h2 style="color: white; margin-bottom: 1.5rem;">💰 Save 10-15% With Direct Orders</h2>
+      <h2 style="color: white; margin-bottom: 1.5rem;"><i class="fas fa-piggy-bank" style="margin-right: 0.5rem;"></i>Save 10-15% With Direct Orders</h2>
       <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 2rem;">Avoid platform commissions! Order directly via WhatsApp and enjoy exclusive savings</p>
-      <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-secondary" style="background-color: white; color: #FF6B35; border: none;">Order on WhatsApp Now</a>
+      <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" style="background-color: white; color: #25D366; border: none; padding: 14px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease;">
+        💬 Order on WhatsApp Now
+      </a>
     </div>
   </section>
 
@@ -275,9 +401,9 @@
         <div class="footer-col">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="https://instagram.com" target="_blank" title="Instagram">📸</a>
-            <a href="https://facebook.com" target="_blank" title="Facebook">👍</a>
-            <a href="https://wa.me/919405769103" target="_blank" title="WhatsApp">💬</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919405769103" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -289,7 +415,10 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Order on WhatsApp">💬</a>
+  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Chat with Sweet Kitchen on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
 
   <!-- Scripts -->
   <script src="js/menu-data.js"></script>

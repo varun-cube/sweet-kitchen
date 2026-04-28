@@ -32,11 +32,14 @@ function initNavbar() {
     });
   }
 
-  // Close menu on link click
+  // Close menu on link click (only on mobile)
   if (navLinks) {
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navLinks.style.display = 'none';
+        // Only close menu on mobile view (max-width: 768px)
+        if (window.innerWidth <= 768) {
+          navLinks.style.display = 'none';
+        }
       });
     });
   }

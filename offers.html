@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,11 +24,11 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <a href="/" class="logo">🍬 Sweet Kitchen</a>
+      <a href="./index.html" class="logo"><i class="fas fa-cake-candles"></i> Sweet Kitchen</a>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="offers.html" style="color: var(--primary-saffron); font-weight: 700;">Offers</a></li>
+        <li><a href="offers.html" style="color: var(--primary-saffron); font-weight: 700; font-weight: 700;">Offers</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -33,11 +36,20 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Exclusive Offers & Combos</h1>
-      <p>Save big with our special deals and WhatsApp exclusive discounts</p>
+  <!-- Hero - Professional Offers Page -->
+  <section class="hero-pro-page" style="background: linear-gradient(135deg, #F8F4F0 0%, #FFF9F5 100%);">
+    <div class="hero-pro-page-content">
+      <div class="hero-pro-label">
+        <i class="fas fa-tags"></i> SPECIAL OFFERS
+      </div>
+      <h1 class="hero-pro-page-title">
+        Exclusive Deals &
+        <span class="hero-pro-gradient">Premium Combos</span>
+      </h1>
+      <p class="hero-pro-page-subtitle">
+        Handpicked bundles at unbeatable prices.
+        <strong>Direct WhatsApp orders = Maximum savings on every purchase</strong>
+      </p>
     </div>
   </section>
 
@@ -53,112 +65,114 @@
         <p style="color: rgba(255,255,255,0.9); margin-bottom: 0.5rem;">Same order for just ₹475 on WhatsApp!</p>
         <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">That's ₹25-50 savings per order</p>
       </div>
-      <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-secondary" style="background-color: white; color: #FF6B35; border: none; font-size: 1.1rem;">Order on WhatsApp Now</a>
+      <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" style="background-color: #25D366; color: white; border: none; font-size: 1.1rem; padding: 14px 28px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease; cursor: pointer;">
+        💬 Order on WhatsApp Now
+      </a>
     </div>
   </section>
 
   <!-- Combo Deals -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">🎁 Our Popular Combos</h2>
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);"><i class="fas fa-gift" style="color: var(--primary-saffron);"></i> Our Popular Combos</h2>
+      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto; gap: 2rem;">
         <!-- Combo 1 -->
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=300&fit=crop" alt="Sweet Lover's Combo" class="card-img">
-          <div class="card-content">
-            <h3 class="card-title">Sweet Lover's Combo</h3>
-            <div style="margin-bottom: 0.5rem;">
-              <p style="color: #666; font-size: 0.9rem;">Includes:</p>
-              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem;">
-                <li>✓ Gulab Jamun (500g)</li>
-                <li>✓ Jalebi (400g)</li>
-                <li>✓ Barfi Mix (400g)</li>
+        <div style="background: white; border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); border: 2px solid transparent;">
+          <img src="https://images.unsplash.com/photo-1593618998160-e34014e67546?w=400&h=300&fit=crop" alt="Sweet Lover's Combo" style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-weight: 700;">Sweet Lover's Combo</h3>
+            <div style="margin-bottom: 1rem;">
+              <p style="color: #666; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">Includes:</p>
+              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem; line-height: 1.6;">
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Gulab Jamun (500g)</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Jalebi (400g)</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Barfi Mix (400g)</li>
               </ul>
             </div>
-            <div style="border-top: 1px solid var(--border-gray); padding-top: 1rem; margin-top: 1rem;">
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 1rem; margin-top: 1rem;">
               <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between;">
                 <div>
-                  <p style="color: #666; font-size: 0.85rem;">Regular: ₹530</p>
-                  <p class="card-price" style="color: var(--primary-saffron); margin-top: 0.25rem;">₹350 💰</p>
+                  <p style="color: #999; font-size: 0.85rem; text-decoration: line-through;">Regular: ₹530</p>
+                  <p style="color: var(--primary-saffron); margin-top: 0.25rem; font-size: 1.3rem; font-weight: 700;">₹350</p>
                 </div>
-                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Sweet%20Lover's%20Combo%20-%20₹350" target="_blank" class="btn-primary btn-sm">Order</a>
+                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Sweet%20Lover's%20Combo%20-%20₹350" target="_blank" class="btn-primary" style="display: inline-block;">Order</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Combo 2 -->
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1631040822154-e629aaaf9f0d?w=400&h=300&fit=crop" alt="Biryani Duo Pack" class="card-img">
-          <div class="card-content">
-            <h3 class="card-title">Biryani Duo Pack</h3>
-            <div style="margin-bottom: 0.5rem;">
-              <p style="color: #666; font-size: 0.9rem;">Includes:</p>
-              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem;">
-                <li>✓ Chhatrapati Sambhaji Nagari Biryani</li>
-                <li>✓ Veg Biryani</li>
-                <li>✓ Raita (300ml)</li>
+        <div style="background: white; border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); border: 2px solid transparent;">
+          <img src="https://images.unsplash.com/photo-1631040822154-e629aaaf9f0d?w=400&h=300&fit=crop" alt="Biryani Duo Pack" style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-weight: 700;">Biryani Duo Pack</h3>
+            <div style="margin-bottom: 1rem;">
+              <p style="color: #666; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">Includes:</p>
+              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem; line-height: 1.6;">
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Chhatrapati Sambhaji Nagari Biryani</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Veg Biryani</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Raita (300ml)</li>
               </ul>
             </div>
-            <div style="border-top: 1px solid var(--border-gray); padding-top: 1rem; margin-top: 1rem;">
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 1rem; margin-top: 1rem;">
               <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between;">
                 <div>
-                  <p style="color: #666; font-size: 0.85rem;">Regular: ₹480</p>
-                  <p class="card-price" style="color: var(--primary-saffron); margin-top: 0.25rem;">₹420 💰</p>
+                  <p style="color: #999; font-size: 0.85rem; text-decoration: line-through;">Regular: ₹480</p>
+                  <p style="color: var(--primary-saffron); margin-top: 0.25rem; font-size: 1.3rem; font-weight: 700;">₹420</p>
                 </div>
-                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Biryani%20Duo%20Pack%20-%20₹420" target="_blank" class="btn-primary btn-sm">Order</a>
+                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Biryani%20Duo%20Pack%20-%20₹420" target="_blank" class="btn-primary" style="display: inline-block;">Order</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Combo 3 -->
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Family Feast" class="card-img">
-          <div class="card-content">
-            <h3 class="card-title">Family Feast (Veg)</h3>
-            <div style="margin-bottom: 0.5rem;">
-              <p style="color: #666; font-size: 0.9rem;">Includes:</p>
-              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem;">
-                <li>✓ Dal Makhani</li>
-                <li>✓ Paneer Tikka Masala</li>
-                <li>✓ Rice + 4 Rotis</li>
-                <li>✓ Raita</li>
+        <div style="background: white; border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); border: 2px solid transparent;">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Family Feast" style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-weight: 700;">Family Feast (Veg)</h3>
+            <div style="margin-bottom: 1rem;">
+              <p style="color: #666; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">Includes:</p>
+              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem; line-height: 1.6;">
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Dal Makhani</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Paneer Tikka Masala</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Rice + 4 Rotis</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Raita</li>
               </ul>
             </div>
-            <div style="border-top: 1px solid var(--border-gray); padding-top: 1rem; margin-top: 1rem;">
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 1rem; margin-top: 1rem;">
               <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between;">
                 <div>
-                  <p style="color: #666; font-size: 0.85rem;">Regular: ₹520</p>
-                  <p class="card-price" style="color: var(--primary-saffron); margin-top: 0.25rem;">₹450 💰</p>
+                  <p style="color: #999; font-size: 0.85rem; text-decoration: line-through;">Regular: ₹520</p>
+                  <p style="color: var(--primary-saffron); margin-top: 0.25rem; font-size: 1.3rem; font-weight: 700;">₹450</p>
                 </div>
-                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Family%20Feast%20-%20₹450" target="_blank" class="btn-primary btn-sm">Order</a>
+                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Family%20Feast%20-%20₹450" target="_blank" class="btn-primary" style="display: inline-block;">Order</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Combo 4 -->
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1585523741865-36a919e91fbc?w=400&h=300&fit=crop" alt="Snack Attack" class="card-img">
-          <div class="card-content">
-            <h3 class="card-title">Snack Attack Pack</h3>
-            <div style="margin-bottom: 0.5rem;">
-              <p style="color: #666; font-size: 0.9rem;">Includes:</p>
-              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem;">
-                <li>✓ Samosa (6 pieces)</li>
-                <li>✓ Onion Pakora (400g)</li>
-                <li>✓ Spring Rolls (4 pieces)</li>
-                <li>✓ Chutneys</li>
+        <div style="background: white; border-radius: 12px; overflow: hidden; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); border: 2px solid transparent;">
+          <img src="https://images.unsplash.com/photo-1585523741865-36a919e91fbc?w=400&h=300&fit=crop" alt="Snack Attack" style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-weight: 700;">Snack Attack Pack</h3>
+            <div style="margin-bottom: 1rem;">
+              <p style="color: #666; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">Includes:</p>
+              <ul style="list-style: none; margin-top: 0.5rem; color: #555; font-size: 0.9rem; line-height: 1.6;">
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Samosa (6 pieces)</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Onion Pakora (400g)</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Spring Rolls (4 pieces)</li>
+                <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Chutneys</li>
               </ul>
             </div>
-            <div style="border-top: 1px solid var(--border-gray); padding-top: 1rem; margin-top: 1rem;">
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 1rem; margin-top: 1rem;">
               <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between;">
                 <div>
-                  <p style="color: #666; font-size: 0.85rem;">Regular: ₹230</p>
-                  <p class="card-price" style="color: var(--primary-saffron); margin-top: 0.25rem;">₹200 💰</p>
+                  <p style="color: #999; font-size: 0.85rem; text-decoration: line-through;">Regular: ₹230</p>
+                  <p style="color: var(--primary-saffron); margin-top: 0.25rem; font-size: 1.3rem; font-weight: 700;">₹200</p>
                 </div>
-                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Snack%20Attack%20Pack%20-%20₹200" target="_blank" class="btn-primary btn-sm">Order</a>
+                <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20order%20Snack%20Attack%20Pack%20-%20₹200" target="_blank" class="btn-primary" style="display: inline-block;">Order</a>
               </div>
             </div>
           </div>
@@ -168,26 +182,26 @@
   </section>
 
   <!-- How to Order Directly -->
-  <section class="section" style="background-color: #f5f5f5;">
+  <section class="section" style="background: linear-gradient(135deg, #f8f4f0 0%, #fff9f5 100%);">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">How to Order Directly & Save</h2>
-      <div class="grid grid-3" style="max-width: 1000px; margin: 0 auto;">
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);">How to Order Directly & Save</h2>
+      <div class="grid grid-3" style="max-width: 1000px; margin: 0 auto; gap: 2rem;">
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: var(--primary-saffron); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">1</div>
-          <h3 style="margin-bottom: 0.5rem;">Click WhatsApp</h3>
-          <p>Tap the WhatsApp button or click the order link</p>
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);"><i class="fab fa-whatsapp"></i></div>
+          <h3 style="margin-bottom: 0.5rem; color: var(--dark-text);">Click WhatsApp</h3>
+          <p style="color: #666; line-height: 1.6;">Tap the WhatsApp button or click the order link</p>
         </div>
 
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: var(--primary-saffron); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">2</div>
-          <h3 style="margin-bottom: 0.5rem;">Place Your Order</h3>
-          <p>Chat with us about what you want to order</p>
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);"><i class="fas fa-list"></i></div>
+          <h3 style="margin-bottom: 0.5rem; color: var(--dark-text);">Place Your Order</h3>
+          <p style="color: #666; line-height: 1.6;">Chat with us about what you want to order</p>
         </div>
 
         <div style="text-align: center;">
-          <div style="width: 60px; height: 60px; background-color: var(--primary-saffron); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">3</div>
-          <h3 style="margin-bottom: 0.5rem;">Get Delivered</h3>
-          <p>Fresh food delivered to your door in 45-60 mins</p>
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(255, 107, 53, 0.25);"><i class="fas fa-truck"></i></div>
+          <h3 style="margin-bottom: 0.5rem; color: var(--dark-text);">Get Delivered</h3>
+          <p style="color: #666; line-height: 1.6;">Fresh food delivered to your door in 45-60 mins</p>
         </div>
       </div>
     </div>
@@ -196,7 +210,7 @@
   <!-- FAQ -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Frequently Asked Questions</h2>
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);"><i class="fas fa-comments" style="color: var(--primary-saffron); margin-right: 0.5rem;"></i>Frequently Asked Questions</h2>
       <div style="max-width: 600px; margin: 0 auto;">
         <div style="margin-bottom: 1.5rem;">
           <h3 style="color: var(--primary-saffron); margin-bottom: 0.5rem;">Why is direct ordering cheaper?</h3>
@@ -238,7 +252,7 @@
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="offers.html">Offers</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -256,9 +270,9 @@
         <div class="footer-col">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="https://instagram.com" target="_blank">📸</a>
-            <a href="https://facebook.com" target="_blank">👍</a>
-            <a href="https://wa.me/919405769103" target="_blank">💬</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919405769103" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -270,7 +284,10 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Order on WhatsApp">💬</a>
+  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Chat with Sweet Kitchen on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>

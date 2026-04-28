@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,198 +24,317 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <a href="/" class="logo">🍬 Sweet Kitchen</a>
+      <a href="./index.html" class="logo"><i class="fas fa-cake-candles"></i> Sweet Kitchen</a>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="offers.html">Offers</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" style="color: var(--primary-saffron); font-weight: 700;">Contact</a></li>
+        <li><a href="contact.html" style="color: var(--primary-saffron); font-weight: 700; font-weight: 700;">Contact</a></li>
       </ul>
       <button class="mobile-menu-toggle">☰</button>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Get In Touch</h1>
-      <p>We'd love to hear from you. Reach us anytime!</p>
+  <!-- Hero - Professional Contact Page -->
+  <section class="hero-pro-page">
+    <div class="hero-pro-page-content">
+      <div class="hero-pro-label">
+        <i class="fas fa-phone"></i> CONTACT US
+      </div>
+      <h1 class="hero-pro-page-title">
+        Let's
+        <span class="hero-pro-gradient">Connect</span>
+      </h1>
+      <p class="hero-pro-page-subtitle">
+        Questions about our menu or service? We're here to help!
+        <strong>WhatsApp • Phone • Email • Delivery Details</strong>
+      </p>
     </div>
   </section>
 
-  <!-- Contact Methods -->
+  <!-- Quick Contact Section -->
+  <section class="section" style="background: linear-gradient(135deg, #FF6B35 0%, #FF4B91 100%); color: white;">
+    <div class="container">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h2 style="color: white; font-size: 2.2rem; margin-bottom: 1rem;">Ready to Order?</h2>
+        <p style="color: rgba(255,255,255,0.95); font-size: 1.1rem; margin-bottom: 2.5rem; line-height: 1.7;">
+          The fastest way to order fresh, handcrafted sweets and meals is through WhatsApp. Chat with our team, customize your order, and enjoy direct pricing!
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" style="background-color: white; color: #25D366; border: none; padding: 16px 36px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 12px; transition: all 0.3s ease; font-size: 1rem; cursor: pointer;">
+            <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i>
+            Order on WhatsApp
+          </a>
+          <a href="tel:+919405769103" style="background-color: rgba(255,255,255,0.2); color: white; border: 2px solid white; padding: 14px 34px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 12px; transition: all 0.3s ease; font-size: 1rem; cursor: pointer;">
+            <i class="fas fa-phone" style="font-size: 1.2rem;"></i>
+            Call Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Details Grid -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Contact Information</h2>
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
-        <div class="card" style="text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">📞</div>
-          <h3>Phone</h3>
-          <p style="color: #666; margin-bottom: 1rem;">Call us directly for urgent orders</p>
-          <a href="tel:+919405769103" class="btn-primary">+91 9405769103</a>
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);">How We Work</h2>
+      <div class="grid grid-3" style="max-width: 1000px; margin: 0 auto; gap: 2rem;">
+        <!-- Cloud Kitchen Info -->
+        <div style="background: white; border-radius: 14px; padding: 2.5rem; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);">
+          <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.8rem;"><i class="fas fa-utensils" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 1rem; text-align: center;">Cloud Kitchen</h3>
+          <p style="color: #666; line-height: 1.7; text-align: center;">We operate from our dedicated FSSAI-certified kitchen, preparing everything fresh daily for quality you can taste.</p>
         </div>
 
-        <div class="card" style="text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">💬</div>
-          <h3>WhatsApp</h3>
-          <p style="color: #666; margin-bottom: 1rem;">Chat with us and save 10-15%!</p>
-          <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="btn-primary">Order on WhatsApp</a>
+        <!-- Fast Preparation -->
+        <div style="background: white; border-radius: 14px; padding: 2.5rem; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);">
+          <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.8rem;"><i class="fas fa-bolt" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 1rem; text-align: center;">Quick Turnaround</h3>
+          <p style="color: #666; line-height: 1.7; text-align: center;">Orders prepared fresh and delivered within 45-60 minutes. Perfect for when you need fresh food fast!</p>
         </div>
 
-        <div class="card" style="text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">🕒</div>
-          <h3>Operating Hours</h3>
-          <p style="color: #666; margin-bottom: 1rem;">Open daily for your convenience</p>
-          <div style="text-align: center;">
-            <p><strong>10:00 AM - 10:00 PM</strong></p>
-            <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">7 days a week</p>
-          </div>
+        <!-- Direct Savings -->
+        <div style="background: white; border-radius: 14px; padding: 2.5rem; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);">
+          <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.8rem;"><i class="fas fa-piggy-bank" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 1rem; text-align: center;">Save 10-15%</h3>
+          <p style="color: #666; line-height: 1.7; text-align: center;">Order directly via WhatsApp and skip platform commissions. Same quality, better pricing!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact - One Row -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);">Quick Contact</h2>
+      <div class="grid grid-4" style="max-width: 1300px; margin: 0 auto; gap: 1.5rem;">
+        <!-- Operating Hours -->
+        <div style="background: linear-gradient(135deg, #fff9f5 0%, #f8f4f0 100%); border-radius: 14px; padding: 2.5rem 1.5rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-clock" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-size: 1.1rem;">Operating Hours</h3>
+          <p style="color: var(--dark-text); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem;">10 AM - 10 PM</p>
+          <p style="color: #999; font-size: 0.85rem;">Monday to Sunday</p>
         </div>
 
-        <div class="card" style="text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 1rem;">📍</div>
-          <h3>Service Area</h3>
-          <p style="color: #666; margin-bottom: 1rem;">We deliver across Chhatrapati Sambhaji Nagar</p>
-          <p style="font-size: 0.95rem;">Check availability for your location</p>
+        <!-- WhatsApp -->
+        <div style="background: linear-gradient(135deg, #e8f8f0 0%, #d4f5e9 100%); border-radius: 14px; padding: 2.5rem 1.5rem; text-align: center; border: 2px solid #25D366; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(37, 211, 102, 0.12);">
+          <div style="width: 80px; height: 80px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fab fa-whatsapp" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 1rem; font-size: 1.1rem;">Order on WhatsApp</h3>
+          <p style="color: #666; margin-bottom: 1.25rem; font-size: 0.9rem;">Fastest way to order & get updates</p>
+          <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" style="background-color: #25D366; color: white; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; cursor: pointer; font-size: 0.95rem;">Start Chat</a>
+        </div>
+
+        <!-- Phone -->
+        <div style="background: linear-gradient(135deg, #fff9f5 0%, #f8f4f0 100%); border-radius: 14px; padding: 2.5rem 1.5rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-phone" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-size: 1.1rem;">Call Us</h3>
+          <p style="color: #666; margin-bottom: 1.25rem; font-size: 0.9rem;">Urgent orders or queries</p>
+          <a href="tel:+919405769103" style="background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; cursor: pointer; font-size: 0.95rem;">+91 9405769103</a>
+        </div>
+
+        <!-- Preparation Time -->
+        <div style="background: linear-gradient(135deg, #fff9f5 0%, #f8f4f0 100%); border-radius: 14px; padding: 2.5rem 1.5rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-hourglass-end" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-size: 1.1rem;">Fresh & Fast</h3>
+          <p style="color: var(--dark-text); font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem;">45-60 Min</p>
+          <p style="color: #999; font-size: 0.85rem;">Order to delivery</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Delivery Areas -->
-  <section class="section" style="background-color: #f5f5f5;">
+  <section class="section" style="background: linear-gradient(135deg, #f8f4f0 0%, #fff9f5 100%);">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 2rem;">📍 Delivery Areas</h2>
-      <p style="text-align: center; color: #666; margin-bottom: 2rem;">We deliver to these areas in Chhatrapati Sambhaji Nagar (and expanding!)</p>
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <h2 style="color: var(--dark-text); margin-bottom: 1rem;"><i class="fas fa-map-location-dot" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Serving Hyderabad</h2>
+        <p style="color: #666; font-size: 1.05rem;">Cloud kitchen in Chhatrapati Sambhaji Nagar | Delivering fresh sweets to 8+ neighborhoods</p>
+      </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto;">
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Hitech City</p>
-        </div>
+      <!-- Kitchen Hub Card -->
+      <div style="max-width: 1100px; margin: 0 auto 3rem;">
+        <div style="background: linear-gradient(135deg, #FF6B35 0%, #FF4B91 100%); border-radius: 16px; padding: 3rem; text-align: center; box-shadow: 0 8px 32px rgba(255, 107, 53, 0.2); color: white; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -40px; right: -40px; width: 150px; height: 150px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+          <div style="position: absolute; bottom: -30px; left: -30px; width: 120px; height: 120px; background: rgba(255,255,255,0.08); border-radius: 50%;"></div>
 
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Gachibowli</p>
-        </div>
-
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Madhapur</p>
-        </div>
-
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">KPHB</p>
-        </div>
-
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Hafeezpet</p>
-        </div>
-
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Jubilee Hills</p>
-        </div>
-
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Banjara Hills</p>
-        </div>
-
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">✅</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Koramangala</p>
-        </div>
-
-        <div style="background: white; padding: 1rem; border-radius: 8px; text-align: center; border: 2px solid var(--primary-saffron);">
-          <span style="font-size: 1.3rem;">❓</span>
-          <p style="margin-top: 0.5rem; font-weight: 600;">Other Areas?</p>
+          <div style="position: relative; z-index: 1;">
+            <div style="width: 90px; height: 90px; background: rgba(255,255,255,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2.5rem;">
+              <i class="fas fa-kitchen-set" style="color: white;"></i>
+            </div>
+            <h3 style="color: white; font-size: 1.8rem; margin-bottom: 0.75rem;">Our Cloud Kitchen</h3>
+            <p style="color: rgba(255,255,255,0.95); font-size: 1.15rem; margin-bottom: 0.5rem; font-weight: 500;">Chhatrapati Sambhaji Nagar</p>
+            <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem;">FSSAI Certified | Fresh Daily Preparation | 10 AM - 10 PM</p>
+          </div>
         </div>
       </div>
 
-      <p style="text-align: center; margin-top: 2rem; color: #666;">
-        Don't see your area?
-        <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20Do%20you%20deliver%20to%20my%20area" target="_blank" style="color: var(--primary-saffron); font-weight: 600; text-decoration: none;">Ask us on WhatsApp!</a>
-      </p>
+      <!-- Delivery Areas Grid -->
+      <div style="max-width: 1100px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
+          <!-- Area Cards -->
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08); position: relative;">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">Hitech City</p>
+            <p style="color: #999; font-size: 0.85rem;">45-55 min delivery</p>
+          </div>
+
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">Gachibowli</p>
+            <p style="color: #999; font-size: 0.85rem;">50-60 min delivery</p>
+          </div>
+
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">Madhapur</p>
+            <p style="color: #999; font-size: 0.85rem;">45-55 min delivery</p>
+          </div>
+
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">KPHB</p>
+            <p style="color: #999; font-size: 0.85rem;">55-65 min delivery</p>
+          </div>
+
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">Hafeezpet</p>
+            <p style="color: #999; font-size: 0.85rem;">50-60 min delivery</p>
+          </div>
+
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">Jubilee Hills</p>
+            <p style="color: #999; font-size: 0.85rem;">50-60 min delivery</p>
+          </div>
+
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">Banjara Hills</p>
+            <p style="color: #999; font-size: 0.85rem;">55-65 min delivery</p>
+          </div>
+
+          <div style="background: white; border-radius: 14px; padding: 2rem; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 16px rgba(255, 107, 53, 0.08);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.6rem;">
+              <i class="fas fa-check-circle" style="color: white;"></i>
+            </div>
+            <p style="font-weight: 700; color: var(--dark-text); font-size: 1.1rem; margin-bottom: 0.5rem;">Koramangala</p>
+            <p style="color: #999; font-size: 0.85rem;">50-60 min delivery</p>
+          </div>
+        </div>
+
+        <!-- Expand Coverage CTA -->
+        <div style="background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(255, 75, 145, 0.08)); border: 2px solid rgba(255, 107, 53, 0.2); border-radius: 14px; padding: 2.5rem; text-align: center;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;"><i class="fas fa-expand-alt" style="color: var(--primary-saffron);"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem; font-size: 1.2rem;">Beyond These Areas?</h3>
+          <p style="color: #666; margin-bottom: 1.5rem;">We may be able to deliver to your location. Let us know!</p>
+          <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20Do%20you%20deliver%20to%20my%20area" target="_blank" style="background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); color: white; padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; cursor: pointer;">
+            <i class="fab fa-whatsapp" style="margin-right: 0.5rem;"></i>Ask on WhatsApp
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Quick Contact Form -->
+  <!-- Why Order From Us -->
+  <section class="section" style="background: linear-gradient(135deg, #f8f4f0 0%, #fff9f5 100%);">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);">Why Customers Love Us</h2>
+      <div class="grid grid-3" style="max-width: 1000px; margin: 0 auto; gap: 2rem;">
+        <div style="background: white; border-radius: 12px; padding: 2rem; text-align: center; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="fas fa-fire" style="color: var(--primary-saffron);"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem;">Always Fresh</h3>
+          <p style="color: #666;">Prepared fresh daily in our FSSAI-certified kitchen. No pre-made batches!</p>
+        </div>
+
+        <div style="background: white; border-radius: 12px; padding: 2rem; text-align: center; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="fas fa-users" style="color: var(--primary-saffron);"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem;">Personal Service</h3>
+          <p style="color: #666;">Chat directly with our team via WhatsApp for custom orders and special requests.</p>
+        </div>
+
+        <div style="background: white; border-radius: 12px; padding: 2rem; text-align: center; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="fas fa-box" style="color: var(--primary-saffron);"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem;">Hygienic Packaging</h3>
+          <p style="color: #666;">Eco-friendly, food-grade containers that keep your food hot and fresh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details -->
   <section class="section">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 2rem;">Send us a Message</h2>
-      <div style="max-width: 600px; margin: 0 auto;">
-        <form id="contact-form" style="display: flex; flex-direction: column; gap: 1rem;">
-          <div>
-            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name</label>
-            <input type="text" name="name" placeholder="Enter your name" required style="width: 100%; padding: 12px; border: 1px solid var(--border-gray); border-radius: 8px; font-size: 1rem;">
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);">How We Serve You</h2>
+      <div class="grid grid-2" style="max-width: 950px; margin: 0 auto; gap: 2rem;">
+        <!-- Delivery Time -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; border: 2px solid #f0f0f0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;"><i class="fas fa-bolt" style="color: white;"></i></div>
+            <h3 style="color: var(--dark-text); margin: 0;">Fast Delivery</h3>
           </div>
-
-          <div>
-            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number</label>
-            <input type="tel" name="phone" placeholder="Your WhatsApp number" required style="width: 100%; padding: 12px; border: 1px solid var(--border-gray); border-radius: 8px; font-size: 1rem;">
-          </div>
-
-          <div>
-            <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
-            <textarea name="message" placeholder="Tell us how we can help..." rows="5" required style="width: 100%; padding: 12px; border: 1px solid var(--border-gray); border-radius: 8px; font-size: 1rem; font-family: 'Nunito', sans-serif;"></textarea>
-          </div>
-
-          <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
-        </form>
-
-        <p style="text-align: center; color: #999; margin-top: 1rem; font-size: 0.9rem;">
-          Or reach us directly on <a href="https://wa.me/919405769103" target="_blank" style="color: var(--primary-saffron); text-decoration: none; font-weight: 600;">WhatsApp</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Delivery & Pickup Info -->
-  <section class="section" style="background-color: #f5f5f5;">
-    <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Delivery Information</h2>
-      <div class="grid grid-2" style="max-width: 900px; margin: 0 auto;">
-        <div>
-          <h3 style="color: var(--primary-saffron); margin-bottom: 1rem;">⚡ Delivery Time</h3>
-          <ul style="list-style: none; color: #666; line-height: 1.8;">
-            <li><strong>Standard:</strong> 45-60 minutes</li>
-            <li><strong>Peak hours:</strong> 60-90 minutes</li>
-            <li><strong>Confirmation:</strong> Via WhatsApp</li>
-            <li><strong>Tracking:</strong> Real-time updates</li>
+          <ul style="list-style: none; color: #666; line-height: 1.8; margin-left: 0;">
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i><strong>45-60 mins</strong> standard delivery</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i><strong>60-90 mins</strong> during peak hours</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Real-time WhatsApp updates</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Order confirmation instant</li>
           </ul>
         </div>
 
-        <div>
-          <h3 style="color: var(--primary-saffron); margin-bottom: 1rem;">💳 Payment Methods</h3>
-          <ul style="list-style: none; color: #666; line-height: 1.8;">
-            <li>✓ UPI (Preferred)</li>
-            <li>✓ Bank Transfer</li>
-            <li>✓ Debit/Credit Card</li>
-            <li>✓ Cash on Delivery (for local orders)</li>
+        <!-- Payment Methods -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; border: 2px solid #f0f0f0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;"><i class="fas fa-credit-card" style="color: white;"></i></div>
+            <h3 style="color: var(--dark-text); margin: 0;">Easy Payment</h3>
+          </div>
+          <ul style="list-style: none; color: #666; line-height: 1.8; margin-left: 0;">
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i><strong>UPI</strong> (Preferred)</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i><strong>Debit/Credit Card</strong></li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i><strong>Bank Transfer</strong></li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i><strong>Cash on Delivery</strong> (local)</li>
           </ul>
         </div>
 
-        <div>
-          <h3 style="color: var(--primary-saffron); margin-bottom: 1rem;">📦 Packaging</h3>
-          <ul style="list-style: none; color: #666; line-height: 1.8;">
-            <li>✓ Food-grade containers</li>
-            <li>✓ Eco-friendly packaging</li>
-            <li>✓ Hot & fresh guarantee</li>
-            <li>✓ Sealed & hygienic</li>
+        <!-- Quality Assurance -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; border: 2px solid #f0f0f0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;"><i class="fas fa-shield-alt" style="color: white;"></i></div>
+            <h3 style="color: var(--dark-text); margin: 0;">Quality Promise</h3>
+          </div>
+          <ul style="list-style: none; color: #666; line-height: 1.8; margin-left: 0;">
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>100% fresh & hygienic</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Hot delivery guaranteed</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Sealed food-grade packaging</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>FSSAI certified kitchen</li>
           </ul>
         </div>
 
-        <div>
-          <h3 style="color: var(--primary-saffron); margin-bottom: 1rem;">🔄 Returns & Complaints</h3>
-          <ul style="list-style: none; color: #666; line-height: 1.8;">
-            <li>✓ Quality guaranteed</li>
-            <li>✓ Complaints: Within 30 mins of delivery</li>
-            <li>✓ Replacements available</li>
-            <li>✓ Quick resolution</li>
+        <!-- Customer Support -->
+        <div style="background: white; border-radius: 12px; padding: 2rem; border: 2px solid #f0f0f0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;"><i class="fas fa-headset" style="color: white;"></i></div>
+            <h3 style="color: var(--dark-text); margin: 0;">Customer Care</h3>
+          </div>
+          <ul style="list-style: none; color: #666; line-height: 1.8; margin-left: 0;">
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Available 10 AM - 10 PM</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Report issues within 30 mins</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Free replacements if needed</li>
+            <li><i class="fas fa-check" style="color: var(--primary-saffron); margin-right: 0.75rem;"></i>Quick resolution guaranteed</li>
           </ul>
         </div>
       </div>
@@ -231,7 +353,7 @@
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="offers.html">Offers</a></li>
             <li><a href="about.html">About</a></li>
@@ -249,9 +371,9 @@
         <div class="footer-col">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="https://instagram.com" target="_blank">📸</a>
-            <a href="https://facebook.com" target="_blank">👍</a>
-            <a href="https://wa.me/919405769103" target="_blank">💬</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919405769103" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -263,7 +385,10 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Order on WhatsApp">💬</a>
+  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Chat with Sweet Kitchen on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>

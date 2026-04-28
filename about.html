@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,23 +24,33 @@
   <!-- Navigation -->
   <nav>
     <div class="container">
-      <a href="/" class="logo">🍬 Sweet Kitchen</a>
+      <a href="./index.html" class="logo"><i class="fas fa-cake-candles"></i> Sweet Kitchen</a>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="offers.html">Offers</a></li>
-        <li><a href="about.html" style="color: var(--primary-saffron); font-weight: 700;">About Us</a></li>
+        <li><a href="about.html" style="color: var(--primary-saffron); font-weight: 700; font-weight: 700;">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="mobile-menu-toggle">☰</button>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <h1>Our Story</h1>
-      <p>Bringing authentic flavors to your doorstep since 2023</p>
+  <!-- Hero - Professional About Page -->
+  <section class="hero-pro-page">
+    <div class="hero-pro-page-content">
+      <div class="hero-pro-label">
+        <i class="fas fa-heart"></i> OUR STORY
+      </div>
+      <h1 class="hero-pro-page-title">
+        Crafted with
+        <span class="hero-pro-gradient">Passion</span>
+        & Tradition
+      </h1>
+      <p class="hero-pro-page-subtitle">
+        Bringing authentic Indian flavors to your table since 2023.
+        <strong>FSSAI certified • Made fresh daily • Premium ingredients</strong>
+      </p>
     </div>
   </section>
 
@@ -62,70 +75,70 @@
   </section>
 
   <!-- Values -->
-  <section class="section" style="background-color: #f5f5f5;">
+  <section class="section" style="background: linear-gradient(135deg, #f8f4f0 0%, #fff9f5 100%);">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Our Values</h2>
-      <div class="grid grid-3" style="max-width: 1000px; margin: 0 auto;">
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🌾</div>
-          <h3 style="margin-bottom: 1rem;">Fresh Always</h3>
-          <p>We prepare everything fresh daily using the finest ingredients</p>
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);">Our Values</h2>
+      <div class="grid grid-3" style="max-width: 1000px; margin: 0 auto; gap: 2rem;">
+        <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); hover: border-color: var(--primary-saffron); hover: transform: translateY(-4px);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-leaf" style="color: white;"></i></div>
+          <h3 style="margin-bottom: 1rem; color: var(--dark-text);">Fresh Always</h3>
+          <p style="color: #666; line-height: 1.6;">We prepare everything fresh daily using the finest ingredients</p>
         </div>
 
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
-          <h3 style="margin-bottom: 1rem;">Hygienic</h3>
-          <p>FSSAI certified kitchen with strict hygiene and food safety standards</p>
+        <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); hover: border-color: var(--primary-saffron); hover: transform: translateY(-4px);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-shield-alt" style="color: white;"></i></div>
+          <h3 style="margin-bottom: 1rem; color: var(--dark-text);">Hygienic</h3>
+          <p style="color: #666; line-height: 1.6;">FSSAI certified kitchen with strict hygiene and food safety standards</p>
         </div>
 
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">❤️</div>
-          <h3 style="margin-bottom: 1rem;">Authentic</h3>
-          <p>Traditional recipes with a modern touch for today's families</p>
+        <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); hover: border-color: var(--primary-saffron); hover: transform: translateY(-4px);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-fire" style="color: white;"></i></div>
+          <h3 style="margin-bottom: 1rem; color: var(--dark-text);">Authentic</h3>
+          <p style="color: #666; line-height: 1.6;">Traditional recipes with a modern touch for today's families</p>
         </div>
 
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">💨</div>
-          <h3 style="margin-bottom: 1rem;">Fast</h3>
-          <p>Quick preparation and delivery without compromising quality</p>
+        <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); hover: border-color: var(--primary-saffron); hover: transform: translateY(-4px);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-bolt" style="color: white;"></i></div>
+          <h3 style="margin-bottom: 1rem; color: var(--dark-text);">Fast</h3>
+          <p style="color: #666; line-height: 1.6;">Quick preparation and delivery without compromising quality</p>
         </div>
 
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
-          <h3 style="margin-bottom: 1rem;">Affordable</h3>
-          <p>Direct WhatsApp ordering saves you 10-15% on platform commissions</p>
+        <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); hover: border-color: var(--primary-saffron); hover: transform: translateY(-4px);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-tag" style="color: white;"></i></div>
+          <h3 style="margin-bottom: 1rem; color: var(--dark-text);">Affordable</h3>
+          <p style="color: #666; line-height: 1.6;">Direct WhatsApp ordering saves you 10-15% on platform commissions</p>
         </div>
 
-        <div style="text-align: center;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">😊</div>
-          <h3 style="margin-bottom: 1rem;">Customer First</h3>
-          <p>Your satisfaction is our top priority. We listen and improve constantly</p>
+        <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); hover: border-color: var(--primary-saffron); hover: transform: translateY(-4px);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-heart" style="color: white;"></i></div>
+          <h3 style="margin-bottom: 1rem; color: var(--dark-text);">Customer First</h3>
+          <p style="color: #666; line-height: 1.6;">Your satisfaction is our top priority. We listen and improve constantly</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Certifications -->
-  <section class="section">
+  <section class="section" style="background: linear-gradient(135deg, #f8f4f0 0%, #fff9f5 100%);">
     <div class="container">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Our Certifications</h2>
-      <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; max-width: 800px; margin: 0 auto;">
-        <div style="text-align: center; flex: 1; min-width: 200px;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🏅</div>
-          <h3>FSSAI Certified</h3>
-          <p style="color: #666; margin-top: 0.5rem;">Food Safety & Standards Authority of India</p>
+      <h2 style="text-align: center; margin-bottom: 3rem; color: var(--dark-text);">Our Certifications</h2>
+      <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
+        <div style="background: white; padding: 2.5rem; border-radius: 12px; text-align: center; flex: 1; min-width: 200px; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #FF6B35, #FFB347); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-certificate" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem;">FSSAI Certified</h3>
+          <p style="color: #666; margin-top: 0.5rem; line-height: 1.6;">Food Safety & Standards Authority of India</p>
         </div>
 
-        <div style="text-align: center; flex: 1; min-width: 200px;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
-          <h3>Hygienic Standards</h3>
-          <p style="color: #666; margin-top: 0.5rem;">ISO certified food preparation facilities</p>
+        <div style="background: white; padding: 2.5rem; border-radius: 12px; text-align: center; flex: 1; min-width: 200px; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #FF4B91, #FF6B35); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-lock" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem;">Hygienic Standards</h3>
+          <p style="color: #666; margin-top: 0.5rem; line-height: 1.6;">ISO certified food preparation facilities</p>
         </div>
 
-        <div style="text-align: center; flex: 1; min-width: 200px;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
-          <h3>Quality Assured</h3>
-          <p style="color: #666; margin-top: 0.5rem;">Regular quality checks and customer feedback</p>
+        <div style="background: white; padding: 2.5rem; border-radius: 12px; text-align: center; flex: 1; min-width: 200px; border: 2px solid transparent; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+          <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-saffron), var(--primary-pink)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 2rem;"><i class="fas fa-star" style="color: white;"></i></div>
+          <h3 style="color: var(--dark-text); margin-bottom: 0.75rem;">Quality Assured</h3>
+          <p style="color: #666; margin-top: 0.5rem; line-height: 1.6;">Regular quality checks and customer feedback</p>
         </div>
       </div>
     </div>
@@ -155,7 +168,7 @@
         <div class="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="offers.html">Offers</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -173,9 +186,9 @@
         <div class="footer-col">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="https://instagram.com" target="_blank">📸</a>
-            <a href="https://facebook.com" target="_blank">👍</a>
-            <a href="https://wa.me/919405769103" target="_blank">💬</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919405769103" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -187,7 +200,10 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Order on WhatsApp">💬</a>
+  <a href="https://wa.me/919405769103?text=Hi%20Sweet%20Kitchen%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="whatsapp-float" title="Chat with Sweet Kitchen on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>

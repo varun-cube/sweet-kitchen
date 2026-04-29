@@ -192,6 +192,16 @@ function updateCartUI() {
   const cartTotal = document.getElementById('cart-total');
   const cartCount = document.getElementById('cart-count');
 
+  // Update cart count badge
+  if (cartCount) {
+    if (cart.length > 0) {
+      cartCount.textContent = cart.length;
+      cartCount.style.display = 'flex';
+    } else {
+      cartCount.style.display = 'none';
+    }
+  }
+
   cartItemsContainer.innerHTML = '';
   let total = 0;
 
@@ -218,7 +228,6 @@ function updateCartUI() {
   }
 
   cartTotal.textContent = SK.formatPrice(total);
-  cartCount.textContent = cart.length > 0 ? cart.length : '';
 
   // Show/hide empty state
   const cartEmpty = document.getElementById('cart-empty');

@@ -69,10 +69,12 @@ function buildWhatsAppOrderURL(itemName, price, cartItems = []) {
 
   if (cartItems.length > 0) {
     message = 'Hi Sweet Kitchen, I want to order:\n\n';
+    let total = 0;
     cartItems.forEach(item => {
-      message += `• ${item.name} - ${formatPrice(item.price)}\n`;
+      const itemTotal = item.price * item.quantity;
+      total += itemTotal;
+      message += `• ${item.name} - Qty: ${item.quantity} - ${formatPrice(itemTotal)}\n`;
     });
-    const total = cartItems.reduce((sum, item) => sum + item.price, 0);
     message += `\nTotal: ${formatPrice(total)}\n`;
   } else {
     message = `Hi Sweet Kitchen, I want to order ${itemName} - ${formatPrice(price)}\n`;
